@@ -34,8 +34,15 @@ const MethodologyPage = ({ methodologyName }) => {
 };
 
 function App() {
-  // New state to store the term entered by the user
+  // new state for mobile menu
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+  // function to toggle sidebar in mobile
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  }
+  
+  // New state to store the term entered by the user
   const [currentSearchTerm, setCurrentSearchTerm] = useState('');
 
   // 4. Function to receive the search term from the SearchInput component
@@ -53,34 +60,38 @@ function App() {
 
   return (
     <div id="app-container">
-
       <div className="search-bar-top-wrapper"> 
-        {/* 6. Place the search component */}
+        {/* Place the search component */}
         <SearchInput onSearchChange={handleSearchChange} />
       </div>
-
       <div className='content-and-sidebar-wrapper'>
-
-          {/* Sidebar Component */}
-                <aside id="sidebar">
-                  <h2>Agile Methodologies</h2>
-                    <ul className="nav-section">
-                      {/* Map over the names to create links */}
-                      {filteredNames.map((name) => (
-                        <li key={name}>
-                          {/* NavLink is a special link component from React Router */}
-                          <NavLink 
-                            to={`/${name.toLowerCase().replace(/\s/g, '-')}`}
-                            className={({ isActive }) => (isActive ? 'active' : '')}
-                          >
-                            {name}
-                          </NavLink>
-                        </li>
-                      ))}
-                    </ul>
-                </aside>
-
-                      {/* Main Content Area: Routes swap components here */}
+        {/* Sidebar Component */}
+            <aside id="sidebar">
+              <h2>Agile Methodologies</h2>
+                <ul className="nav-section">
+                  {/* Map over the names to create links */}
+                  {filteredNames.map((name) => (
+                    <li key={name}>
+                      {/* NavLink is a special link component from React Router */}
+                      <NavLink 
+                        to={`/${name.toLowerCase().replace(/\s/g, '-')}`}
+                        className={({ isActive }) => (isActive ? 'active' : '')}
+                      >
+                        {name}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+            </aside>
+            {/* Mobile Menu Toggle Button (Visible only on small screens) */}
+            <button className='menu-toggle' onClick={toggleSidebar}>
+                {isSidebarOpen ? '✖ Close Menu' : '☰ Open Menu'}
+            </button>
+            <Sidebar 
+              // The class `show-sidebar` will be added if isSidebarOpen is true
+              className={isSidebarOpen ? 'show-sidebar' : ''} 
+            />
+      {/* Main Content Area: Routes swap components here */}
       <main className="main-content">
         <Routes>
           
