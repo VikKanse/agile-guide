@@ -156,13 +156,17 @@ html, body {
         flex-direction: column;
         max-width: 100%; 
         box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content-and-sidebar-wrapper {
+        flex-direction: column;
     }
 
     #sidebar {
         width: 100%;
         height: auto;
-        padding: 10px 0;
-        display: none; 
     }
     
     #sidebar h2 {
@@ -177,6 +181,7 @@ html, body {
     }
 
     .main-content {
+        width: 100%;
         padding: 15px; 
     }
     
