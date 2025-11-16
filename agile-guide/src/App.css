@@ -1,4 +1,4 @@
-/* --- 1. Basic Reset and Root Styling --- */
+/* Basic Reset and Root Styling */
 /*src/App.css*/
 /* Global Box Sizing Reset for predictable layouts */
 *, *::before, *::after {
@@ -32,7 +32,7 @@ html, body {
     padding: 0;
 }
 
-/* --- 2. App Layout Container (Flexbox) --- */
+/* App Layout Container (Flexbox) --- */
 
 #app-container {
     max-width: 1200px;
@@ -114,7 +114,7 @@ html, body {
     overflow-y: auto;
     
     /* FIX FOR PREVIOUS LAYOUT ISSUE: Ensures the content area does not collapse */
-    min-width: 500px;
+    min-width: 300px;
 }
 
 .main-content h1 {
