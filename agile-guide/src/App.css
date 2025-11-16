@@ -13,23 +13,34 @@
     --sidebar-width: 250px;
 }
 
-body {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
     color: var(--text-color);
+    width: 100%;
+    min-height: 100%;
+}
+
+#root {
+    width: 100%;
+    /* 100vh ensures it fills the available screen height */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 /* --- 2. App Layout Container (Flexbox) --- */
 
 #app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     background-color: var(--bg-color);
     padding: 20px;
 }
