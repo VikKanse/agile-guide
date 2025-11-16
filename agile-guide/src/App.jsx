@@ -85,6 +85,7 @@ function App() {
                       <NavLink 
                         to={`/${name.toLowerCase().replace(/\s/g, '-')}`}
                         className={({ isActive }) => (isActive ? 'active' : '')}
+                        onClick={toggleSidebar} // Close sidebar on link click (mobile)
                       >
                       {name}
                       </NavLink>

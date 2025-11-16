@@ -172,12 +172,24 @@ html, body {
     #sidebar {
         width: 100%;
         height: auto;
-        display: none; /*hides sidebar on mobile by default*/
+
+        /* CRITICAL: Set the fixed position and initial hidden state */
+        position: fixed; /* Detach from flow */
+        top: 0;
+        left: 0;
+        bottom: 0;
+
+        /* Initial State: Move the sidebar completely off-screen to the left */
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999; /* Ensure it overlays other content */
+        display: block; /*hides sidebar on mobile by default*/
     }
 
     #sidebar.show-sidebar {
-        display: block !important;
-        order: -1;
+        transform: translateX(0); /* Slide in the sidebar */
+        
+        order: unset; /* Reset order to normal when shown */
     }
     
     #sidebar h2 {
