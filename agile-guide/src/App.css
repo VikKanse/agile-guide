@@ -1,5 +1,5 @@
 /* --- 1. Basic Reset and Root Styling --- */
-
+/*src/App.css*/
 /* Global Box Sizing Reset for predictable layouts */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -209,10 +209,6 @@ html, body {
         border: none;
         cursor: pointer;
         font-size: 1.1em;
-    }
-    
-    .show-sidebar {
-        display: block !important;
     }
 }
 .menu-toggle {

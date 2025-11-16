@@ -64,9 +64,19 @@ function App() {
         {/* Place the search component */}
         <SearchInput onSearchChange={handleSearchChange} />
       </div>
+
       <div className='content-and-sidebar-wrapper'>
+        {/* Mobile Menu Toggle Button (Visible only on small screens) */}
+            <button className='menu-toggle' onClick={toggleSidebar}>
+                {isSidebarOpen ? '✖ Close Menu' : '☰ Open Menu'}
+            </button>
+
+
         {/* Sidebar Component */}
-            <aside id="sidebar">
+            <aside id="sidebar"
+            // Apply the show-sidebar class only on mobile when toggles
+            className={isSidebarOpen ? 'show-sidebar' : ''} 
+            >
               <h2>Agile Methodologies</h2>
                 <ul className="nav-section">
                   {/* Map over the names to create links */}
@@ -77,20 +87,12 @@ function App() {
                         to={`/${name.toLowerCase().replace(/\s/g, '-')}`}
                         className={({ isActive }) => (isActive ? 'active' : '')}
                       >
-                        {name}
+                      {name}
                       </NavLink>
                     </li>
                   ))}
                 </ul>
             </aside>
-            {/* Mobile Menu Toggle Button (Visible only on small screens) */}
-            <button className='menu-toggle' onClick={toggleSidebar}>
-                {isSidebarOpen ? '✖ Close Menu' : '☰ Open Menu'}
-            </button>
-            <Sidebar 
-              // The class `show-sidebar` will be added if isSidebarOpen is true
-              className={isSidebarOpen ? 'show-sidebar' : ''} 
-            />
       {/* Main Content Area: Routes swap components here */}
       <main className="main-content">
         <Routes>
