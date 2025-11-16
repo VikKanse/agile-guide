@@ -150,6 +150,10 @@ html, body {
     box-sizing: border-box;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 /* Mobile Responsiveness (Media Query) */
 @media (max-width: 768px) {
     
@@ -210,7 +214,4 @@ html, body {
         cursor: pointer;
         font-size: 1.1em;
     }
-}
-.menu-toggle {
-    display: none;
 }
