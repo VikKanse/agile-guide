@@ -64,7 +64,6 @@ function App() {
         {/* Place the search component */}
         <SearchInput onSearchChange={handleSearchChange} />
       </div>
-
       <div className='content-and-sidebar-wrapper'>
         {/* Mobile Menu Toggle Button (Visible only on small screens) */}
             <button className='menu-toggle' onClick={toggleSidebar}>
