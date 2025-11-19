@@ -154,6 +154,21 @@ html, body {
     display: none;
 }
 
+.app_header {
+    text-align: center;
+    padding: 10px 0 20 px 0;
+    margin-bottom: 20px;
+    border-bottom: 3 px solid var(--primary-color);
+}
+
+.app_header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
 /* Mobile Responsiveness (Media Query) */
 @media (max-width: 768px) {
     
@@ -163,6 +178,15 @@ html, body {
         box-shadow: none;
         margin: 0;
         padding: 0;
+    }
+
+    .app_header {
+        padding: 10px 10px 15px 10px;
+        margin-bottom: 15px;
+    }
+
+    .app_header h1 {
+        font-size: 2em;
     }
 
     .content-and-sidebar-wrapper {

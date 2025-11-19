@@ -60,6 +60,10 @@ function App() {
 
   return (
     <div id="app-container">
+      {/* Application Heading */}
+        <header className="app-header">
+            <h1>SupermanAgile</h1>
+        </header>
       <div className="search-bar-top-wrapper"> 
         {/* Place the search component */}
         <SearchInput onSearchChange={handleSearchChange} />
