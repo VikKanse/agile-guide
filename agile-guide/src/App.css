@@ -47,7 +47,6 @@ html, body {
 }
 
 .app_header {
-    text-align: center;
     padding: 10px 0 20 px 0;
     margin-bottom: 20px;
     border-bottom: 3 px solid var(--primary-color);
