@@ -46,6 +46,21 @@ html, body {
     padding: 20px;
 }
 
+.app_header {
+    text-align: center;
+    padding: 10px 0 20 px 0;
+    margin-bottom: 20px;
+    border-bottom: 3 px solid var(--primary-color);
+}
+
+.app_header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
 /* NEW: Style for the top Search Bar */
 .top-search-bar {
     padding-bottom: 20px;
@@ -152,21 +167,6 @@ html, body {
 
 .menu-toggle {
     display: none;
-}
-
-.app_header {
-    text-align: center;
-    padding: 10px 0 20 px 0;
-    margin-bottom: 20px;
-    border-bottom: 3 px solid var(--primary-color);
-}
-
-.app_header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: var(--primary-color);
-    font-weight: 800;
-    letter-spacing: 1px;
 }
 
 /* Mobile Responsiveness (Media Query) */
