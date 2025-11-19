@@ -53,12 +53,17 @@ html, body {
 }
 
 .app_header h1 {
+    display: block;
+    width: 100%;
     text-align: center;
+
     font-size: 2.5em;
     margin: 0;
     color: var(--primary-color);
     font-weight: 800;
     letter-spacing: 1px;
+
+    border: 1px solid red;
 }
 
 /* NEW: Style for the top Search Bar */
