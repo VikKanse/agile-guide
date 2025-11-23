@@ -46,13 +46,13 @@ html, body {
     padding: 20px;
 }
 
-.app_header {
-    padding: 10px 0 20 px 0;
+.app-header {
+    padding: 10px 0 20px 0;
     margin-bottom: 20px;
-    border-bottom: 3 px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
 }
 
-.app_header h1 {
+.app-header h1 {
     display: block;
     width: 100%;
     text-align: center;
@@ -63,7 +63,6 @@ html, body {
     font-weight: 800;
     letter-spacing: 1px;
 
-    border: 1px solid red;
 }
 
 /* NEW: Style for the top Search Bar */
