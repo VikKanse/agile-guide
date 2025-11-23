@@ -9,6 +9,7 @@ export const methodologiesData = {
     // INTRODUCTION HOME PAGE DATA (New)
     // -------------------------------------------------------------------
     Introduction: {
+        title: "Introduction to Agile",
         description: "Welcome to your comprehensive guide to Agile methodologies. Agile is a mindset and set of principles defined in the Agile Manifesto, aimed at building and responding to change in complex, uncertain environments.",
         sections: {
             WhyAgile: {
@@ -43,6 +44,7 @@ export const methodologiesData = {
     // SCRUM METHODOLOGY DATA (Existing)
     // -------------------------------------------------------------------
     Scrum: {
+        title: "Scrum Methodology",
         description: "Scrum is the most popular Agile framework for developing, delivering, and sustaining complex products. It is lightweight, simple to understand, and difficult to master.",
         sections: {
             Beginning: {
@@ -86,6 +88,7 @@ export const methodologiesData = {
     // KANBAN METHODOLOGY DATA (Existing)
     // -------------------------------------------------------------------
     Kanban: {
+        title: "Kanban Methodology",
         description: "Kanban is a method for managing and improving work across human systems. It is based on flow and visualizing work, originating from Toyota's manufacturing process.",
         sections: {
             Beginning: {
@@ -128,6 +131,7 @@ export const methodologiesData = {
     // EXTREME PROGRAMMING (XP) METHODOLOGY DATA (Existing)
     // -------------------------------------------------------------------
     XP: {
+        title: "Extreme Programming (XP) Methodology",
         description: "Extreme Programming (XP) is a prescriptive framework focused on technical practices for producing high-quality code and customer collaboration. It emphasizes frequent releases in short cycles.",
         sections: {
             Beginning: {
@@ -170,6 +174,7 @@ export const methodologiesData = {
     // LARGE-SCALE SCRUM (LeSS) METHODOLOGY DATA (Existing)
     // -------------------------------------------------------------------
     LeSS: {
+        title: "Large-Scale Scrum (LeSS) Methodology",
         description: "LeSS is a scaled Agile framework that applies the principles of Scrum to multiple teams working together on a single Product Backlog to build one product.",
         sections: {
             Beginning: {
@@ -212,6 +217,7 @@ export const methodologiesData = {
     // SCALED AGILE FRAMEWORK (SAFe) DATA (Existing)
     // -------------------------------------------------------------------
     SAFe: {
+        title: "Scaled Agile Framework (SAFe) Methodology",
         description: "SAFe is a comprehensive framework for scaling Agile and Lean practices across large enterprises. It includes roles, responsibilities, and guidance at the team, program, large solution, and portfolio levels.",
         sections: {
             Beginning: {
@@ -254,6 +260,7 @@ export const methodologiesData = {
     // FLIGHT LEVELS FRAMEWORK DATA (Existing)
     // -------------------------------------------------------------------
     FlightLevels: {
+        title: "Flight Levels Methodology",
         description: "Flight Levels is a lightweight, context-driven framework that helps organizations understand, visualize, and improve the flow of work across different organizational levels to achieve business agility.",
         sections: {
             Beginning: {
@@ -291,14 +298,19 @@ export const methodologiesData = {
             }
         }
     },
+    // -------------------------------------------------------------------
+    // LEAN
+    // -------------------------------------------------------------------
+    Lean:{
+        title: "Lean Methodology", 
+        description: "Content Coming soon...",
+        sections: {}
+    },
     "Glossary": { 
         title: "AgileGlossary", 
         description: "Essential terms and definitions." 
     },
-    // -------------------------------------------------------------------
-    // LEAN
-    // -------------------------------------------------------------------
-    Lean:{}
+
 
 };
 
