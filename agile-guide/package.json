@@ -10,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "cross-env VITE_APP_DEPLOY_ENV=gh-pages -d dist"
+    "deploy": "cross-env VITE_APP_DEPLOY_ENV=github node_modules/.bin/gh-pages -d dist"
   },
   "dependencies": {
     "dompurify": "^3.3.0",
